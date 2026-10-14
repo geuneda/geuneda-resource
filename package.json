@@ -1,0 +1,16 @@
+{
+  "name": "com.geuneda.resource",
+  "displayName": "Geuneda Resource",
+  "author": "geuneda",
+  "version": "0.1.0",
+  "unity": "2021.3",
+  "license": "MIT",
+  "description": "원격 리소스(테이블 등 데이터 파일) 캐시입니다. 서명된 매니페스트 항목(카테고리, 버전, 크기, SHA-256, URL)으로 캐시 파일의 크기·해시가 맞는지 보고, 맞지 않는 것만 받아 저장 전에 검증한 뒤 임시 파일에서 이름을 바꿔 원자적으로 저장합니다. 새 버전 저장 뒤에 옛 버전 삭제, 동시 다운로드 수 제한, 받기 전 총 용량 확인, 진행률, 파일 입출력과 해시는 스레드 풀. 매니페스트는 com.geuneda.appsetting 의 resources 노드 등에서 옮겨 받습니다(의존 없음).",
+  "type": "library",
+  "hideInEditor": false,
+  "dependencies": {
+    "com.geuneda.core": "0.2.0",
+    "com.geuneda.http": "0.1.0",
+    "com.cysharp.unitask": "2.5.10"
+  }
+}
